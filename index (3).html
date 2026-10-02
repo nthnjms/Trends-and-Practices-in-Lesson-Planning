@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  HOW TO EDIT THIS SITE
+  ----------------------------------------------------------------------------
+  1. Scroll to the bottom of this file and find the block marked
+     "SITE SETTINGS". Almost everything you need to change lives there:
+       - institution, adviser, research email, ethics note
+       - Jotform link for the interview screening form
+       - survey form link
+       - survey on/off switch (surveyOpen: true)
+  2. Anything still shown with a pale yellow highlight on the page is a
+     placeholder. Once you replace the value, the highlight disappears.
+  3. Study description text (About, Participant Information) is plain HTML
+     below. Search for "EDIT:" comments to find the passages you may want
+     to change.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trends and Practices in Lesson Planning among Pre-Service Teachers | Graduate Research Study</title>
+  <meta name="description" content="Participant information and recruitment for a graduate mixed-methods study on how pre-service teachers experience, understand, and practice lesson planning.">
+  <meta name="author" content="Nathaniel James B. Toñacao">
+  <meta name="theme-color" content="#f8f7f4">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trends and Practices in Lesson Planning among Pre-Service Teachers">
+  <meta property="og:description" content="A graduate mixed-methods study on how pre-service teachers experience, understand, and practice lesson planning. Participant information and recruitment.">
+  <meta property="og:locale" content="en_PH">
+  <!-- EDIT: add <meta property="og:url" content="https://your-site-address"> once the site has an address. -->
+
+  <link rel="icon" href="data:,">
+
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --surface: #ffffff;
+      --text: #222222;
+      --muted: #59564f;
+      --rule: #d9d6cd;
+      --accent: #1f3b63;
+      --accent-dark: #152a47;
+      --placeholder: #fdf1c2;
+
+      --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+      --header-h: 3.5rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-h) + 1rem);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+
+    img, iframe { max-width: 100%; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 1px;
+    }
+    a:hover { color: var(--accent-dark); text-decoration-thickness: 2px; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      z-index: 20;
+    }
+    .skip-link:focus { top: 0.75rem; color: #fff; }
+
+    .wrap {
+      width: 100%;
+      max-width: 62rem;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Placeholder highlight: disappears automatically when a value is filled in */
+    .ph {
+      background: var(--placeholder);
+      padding: 0 0.2em;
+      border-radius: 1px;
+    }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--header-h);
+    }
+    .site-name {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .site-name:hover { color: var(--accent); text-decoration: none; }
+
+    .menu-toggle {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--text);
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+    }
+    .menu-toggle:hover { border-color: var(--muted); }
+
+    .site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .site-nav a {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .site-nav a:hover { color: var(--text); text-decoration: underline; text-decoration-thickness: 1px; }
+
+    /* Mobile nav: dropdown panel under the header */
+    .site-nav {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+      padding: 0.5rem 1.25rem 1rem;
+    }
+    .site-nav.is-open { display: block; }
+    .site-nav li + li { border-top: 1px solid var(--rule); }
+    .site-nav a { display: block; padding: 0.75rem 0; }
+
+    @media (min-width: 52rem) {
+      .menu-toggle { display: none; }
+      .site-nav {
+        display: block;
+        position: static;
+        border: 0;
+        padding: 0;
+        background: none;
+      }
+      .site-nav ul { display: flex; gap: 1.5rem; }
+      .site-nav li + li { border: 0; }
+      .site-nav a { padding: 0.25rem 0; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: 3.5rem 0 3rem; }
+    .hero h1 {
+      font-size: clamp(1.75rem, 4.6vw, 2.4rem);
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -0.005em;
+      max-width: 36rem;
+      margin: 0 0 1rem;
+    }
+    .hero .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 36rem;
+      margin: 0 0 2.5rem;
+    }
+
+    .pathways {
+      display: grid;
+      gap: 2rem;
+      max-width: 46rem;
+    }
+    @media (min-width: 40rem) {
+      .pathways { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    }
+    .pathway {
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+    .pathway.is-open { border-top: 2px solid var(--accent); padding-top: calc(1rem - 1px); }
+    .pathway h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0 0 0.25rem;
+    }
+    .status {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .status.is-open { color: var(--accent); font-weight: 600; }
+    .pathway p.desc { margin: 0 0 1.25rem; }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #fff;
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      padding: 0.65rem 1.15rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; text-decoration: none; }
+    .btn:disabled, .btn[aria-disabled="true"] {
+      background: transparent;
+      color: var(--muted);
+      border-color: var(--rule);
+      cursor: default;
+    }
+
+    .intro { margin-top: 3rem; max-width: 40rem; }
+    .intro p { margin: 0 0 1rem; }
+
+    /* ---------- Sections ---------- */
+    .section { border-top: 1px solid var(--rule); padding: 3rem 0; }
+    .section-grid { display: grid; gap: 1rem; }
+    @media (min-width: 56rem) {
+      .section-grid { grid-template-columns: 11rem minmax(0, 40rem); gap: 3rem; }
+    }
+    .section h2 {
+      font-size: 1.25rem;
+      line-height: 1.3;
+      font-weight: 600;
+      margin: 0;
+    }
+    .content > :first-child { margin-top: 0; }
+    .content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 2rem 0 0.4rem;
+    }
+    .content p { margin: 0 0 1rem; }
+    .content ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+    .content li { margin-bottom: 0.35rem; }
+
+    dl.facts { margin: 0 0 1rem; }
+    dl.facts div {
+      padding: 0.75rem 0;
+      border-top: 1px solid var(--rule);
+    }
+    dl.facts div:last-child { border-bottom: 1px solid var(--rule); }
+    dl.facts dt {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 0.1rem;
+    }
+    dl.facts dd { margin: 0; }
+    @media (min-width: 40rem) {
+      dl.facts div { display: grid; grid-template-columns: 11rem 1fr; gap: 1rem; }
+      dl.facts dt { margin: 0.2rem 0 0; }
+    }
+
+    .note {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Participation pathways ---------- */
+    .path-block + .path-block {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+    .path-block > h3 { margin-top: 0; font-size: 1.15rem; }
+    .path-block .status { margin-bottom: 0.9rem; }
+
+    /* Embed container: swap the form without touching layout */
+    .embed {
+      margin: 1.5rem 0 0.5rem;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+    }
+    .embed iframe {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+      border: 0;
+    }
+    .embed-placeholder {
+      padding: 2.5rem 1.25rem;
+      text-align: center;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .embed-placeholder code {
+      display: inline-block;
+      margin-bottom: 0.4rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--placeholder);
+      padding: 0.1rem 0.4rem;
+    }
+    .embed-placeholder p { margin: 0; }
+
+    .closed-note {
+      border: 1px solid var(--rule);
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0 0;
+    }
+    .closed-note p { margin: 0; }
+
+    [hidden] { display: none !important; }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      padding: 2.5rem 0 3rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .site-footer p { margin: 0 0 0.35rem; }
+    .site-footer .foot-title { color: var(--text); font-weight: 600; }
+    .footer-links { list-style: none; padding: 0; margin: 1.25rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--text); }
+    .footer-note { margin-top: 1.25rem !important; max-width: 40rem; }
+
+    /* ---------- Motion ---------- */
+    .js .reveal { opacity: 0; transition: opacity 0.5s ease; }
+    .js .reveal.is-visible { opacity: 1; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+      .js .reveal { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="#home">Lesson Planning Study</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#participate">Participate</a></li>
+          <li><a href="#information">Participant Information</a></li>
+          <li><a href="#researcher">Researcher</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="wrap">
+        <h1 id="home-title">Trends and Practices in Lesson Planning among Pre-Service Teachers</h1>
+        <p class="lead">A mixed-methods research study exploring how pre-service teachers experience, understand, and practice lesson planning.</p>
+
+        <div class="pathways">
+          <section class="pathway is-open" data-pathway="interview" aria-labelledby="pw-interview">
+            <h2 id="pw-interview">Qualitative Interview</h2>
+            <p class="status is-open" data-status="interview">Currently Open</p>
+            <p class="desc">Share your experiences and perspectives on lesson planning.</p>
+            <a class="btn" href="#participate-interview" data-cta="interview">Join the Interview</a>
+          </section>
+
+          <section class="pathway" data-pathway="survey" aria-labelledby="pw-survey">
+            <h2 id="pw-survey">Quantitative Survey</h2>
+            <p class="status" data-status="survey">Opening Soon</p>
+            <p class="desc">Contribute to the survey phase of the study.</p>
+            <button class="btn" type="button" disabled data-cta="survey">Coming Soon</button>
+          </section>
+        </div>
+
+        <div class="intro">
+          <p>This study has two phases. In the first, English pre-service teachers are invited to take part in individual interviews about how they plan lessons and what has shaped their planning during their teacher education. In the second, a survey built from what the interviews reveal will be open to a wider group of pre-service teachers.</p>
+          <p>Your experience as a pre-service teacher can contribute valuable insights to this study. Participation is voluntary, and the <a href="#information">participant information</a> explains what to expect before you decide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section reveal" aria-labelledby="about-title">
+      <div class="wrap section-grid">
+        <h2 id="about-title">About the Study</h2>
+        <div class="content">
+          <!-- EDIT: study description -->
+          <dl class="facts">
+            <div>
+              <dt>Study title</dt>
+              <dd>Trends and Practices in Lesson Planning among Pre-Service Teachers: A Structural Equation Modeling</dd>
+            </div>
+          </dl>
+
+          <h3>Purpose</h3>
+          <p>Lesson planning is one of the main ways pre-service teachers turn what they have learned into classroom practice. This study looks at how English pre-service teachers plan their lessons, how recent developments such as AI tools, digital technologies, learner-centered approaches, and competency-based planning fit into that work, and how the preparation provided by their institutions relates to their confidence and skill as lesson planners.</p>
+          <p>The aim is to understand these experiences well enough to suggest ways of strengthening lesson planning preparation in English teacher education programs.</p>
+
+          <h3>Mixed-methods design</h3>
+          <p>The study uses two connected phases. The interviews come first, and what participants say shapes the survey that follows. A statistical method called structural equation modeling is then used to examine how several ideas, such as new planning trends, institutional preparation, and lesson planning competence, relate to one another.</p>
+
+          <h3>Qualitative interview phase</h3>
+          <p>Individual interviews, held in person or by video call, in which participants describe how they plan lessons and what has helped or made planning difficult. This phase is open now.</p>
+
+          <h3>Quantitative survey phase</h3>
+          <p>A questionnaire for a larger group of pre-service teachers, based on the themes identified in the interviews. This phase will open at a later stage of the study.</p>
+
+          <h3>Who the study is for</h3>
+          <p>Pre-service teachers enrolled in a Bachelor of Secondary Education program majoring in English (or an equivalent program) at higher education institutions in Eastern Visayas, who are taking or have recently completed Field Study or Practice Teaching.</p>
+
+          <h3>What participation involves</h3>
+          <p>Taking part means either sitting for one interview or completing one survey, depending on the phase. Details are on the <a href="#information">Participant Information</a> section.</p>
+
+          <h3>Confidentiality</h3>
+          <p>Your name will not appear in any report or presentation of this study. Identifying details are replaced with codes, and findings are reported as themes or group-level results. The <a href="#privacy">privacy section</a> explains how information is stored.</p>
+
+          <h3>Researcher</h3>
+          <p>This study is conducted by Nathaniel James B. Toñacao as part of a Master of Arts in Education (English Language Teaching). See <a href="#researcher">Researcher</a> for details.</p>
+
+          <p class="note">Ethics review: <span data-site="ethics" class="ph">[Ethics clearance details to be added]</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICIPATE ===================== -->
+    <section id="participate" class="section reveal" aria-labelledby="participate-title">
+      <div class="wrap section-grid">
+        <h2 id="participate-title">Participate</h2>
+        <div class="content">
+
+          <!-- QUALITATIVE INTERVIEW -->
+          <div class="path-block" id="participate-interview">
+            <h3>Qualitative Interview</h3>
+            <p class="status is-open" data-status="interview">Currently Open</p>
+            <p>Interviews are individual conversations of about 45 to 60 minutes about your experience of lesson planning. To begin, please complete the short screening form below. It helps confirm that the interview suits your situation.</p>
+            <p>After you submit the form, you will receive further information about the study by email.</p>
+
+            <!--
+              EDIT: JOTFORM EMBED (interview screening)
+              Do not edit here. Paste the form link into SITE SETTINGS at the bottom
+              of this file (interviewFormUrl). The form will then appear in this box.
+            -->
+            <div class="embed" id="embed-interview">
+              <div class="embed-placeholder">
+                <code>[JOTFORM_EMBED_HERE]</code>
+                <p>The screening form will appear here.</p>
+              </div>
+            </div>
+
+            <div class="closed-note" id="interview-closed" hidden>
+              <p>The interview phase is no longer accepting new participants.</p>
+            </div>
+          </div>
+
+          <!-- QUANTITATIVE SURVEY -->
+          <div class="path-block" id="participate-survey">
+            <h3>Quantitative Survey</h3>
+            <p class="status" data-status="survey">Opening Soon</p>
+            <p data-survey-note>Coming soon — the survey phase will open at a later stage of the study.</p>
+
+            <!--
+              EDIT: SURVEY EMBED
+              When the survey opens, set surveyOpen: true and add the form link
+              (surveyFormUrl) in SITE SETTINGS at the bottom of this file.
+            -->
+            <div class="embed" id="embed-survey" hidden>
+              <div class="embed-placeholder">
+                <code>[QUANTITATIVE_FORM_EMBED_HERE]</code>
+                <p>The survey will appear here.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICIPANT INFORMATION ===================== -->
+    <section id="information" class="section reveal" aria-labelledby="info-title">
+      <div class="wrap section-grid">
+        <h2 id="info-title">Participant Information</h2>
+        <div class="content">
+          <p>Please read this before deciding whether to take part. You are welcome to ask questions at any point (see <a href="#contact">Contact</a>).</p>
+
+          <h3>Who may participate</h3>
+          <p>You may take part if you are:</p>
+          <ul>
+            <li>enrolled in a Bachelor of Secondary Education program majoring in English, or an equivalent program, at a participating institution in Eastern Visayas;</li>
+            <li>currently doing, or have recently completed, Field Study or Practice Teaching; and</li>
+            <li>willing to take part voluntarily and give your consent.</li>
+          </ul>
+          <p>For the interviews, we also ask that you have submitted at least three formal lesson plans, so that you have enough planning experience to talk about.</p>
+          <!-- EDIT: eligibility criteria, if they change -->
+
+          <h3>What participation involves</h3>
+          <p><strong>Interview.</strong> One individual conversation, in person at your institution or by video call (for example Zoom or Google Meet). You may answer in English, Filipino, or your regional language. With your permission, the conversation is audio-recorded. You may be asked to describe a lesson plan you have recently submitted, but you will not be asked to hand it over.</p>
+          <p><strong>Survey.</strong> A questionnaire in which you rate how much you agree with statements about your lesson planning and your preparation. It is completed on your own, online or on paper.</p>
+
+          <h3>Time commitment</h3>
+          <p>An interview takes about 45 to 60 minutes. The survey is expected to take about 20 to 25 minutes. <span class="ph">[Confirm final time estimates]</span></p>
+
+          <h3>Taking part is voluntary</h3>
+          <p>You decide whether to participate. You may skip any question, stop at any time, and withdraw without giving a reason. Whether or not you take part will have no effect on your grades, your practicum evaluation, or your standing at your institution. Invitations are not made through your own course instructors or practicum supervisors.</p>
+          <p>A small token of appreciation is planned for participants. It does not depend on what you say. <span class="ph">[Confirm details]</span></p>
+
+          <h3>Possible risks and benefits</h3>
+          <p>The risks are small. Some people may feel a little uncomfortable when reflecting on difficulties in their planning. You can decline any question. There is no direct personal benefit, but your responses will help inform recommendations for improving lesson planning preparation in teacher education.</p>
+
+          <h3 id="privacy">Confidentiality and privacy</h3>
+          <ul>
+            <li>Your name is replaced with a code when interviews are transcribed and when survey responses are entered.</li>
+            <li>Audio recordings, transcripts, and survey data are kept in password-protected storage accessible only to the researcher and authorized members of the research team.</li>
+            <li>Results are reported as themes or group-level findings. Nothing that identifies you will be published.</li>
+            <li>Information is handled in line with the Data Privacy Act of 2012 (Republic Act No. 10173).</li>
+            <li>Data are kept for at least five years after the study is completed, then permanently deleted.</li>
+          </ul>
+
+          <h3>How your information will be used</h3>
+          <p>What you share will be used only for this study: for the thesis, and for any related presentations or publications. Interview themes will be used to build the survey. Information will not be shared with anyone outside the research team without your written consent and ethics committee approval.</p>
+
+          <h3>Ethics review</h3>
+          <p><span data-site="ethics" class="ph">[Ethics clearance details to be added]</span></p>
+
+          <h3>Questions</h3>
+          <p>If you have questions about the study or your participation, email <a data-email="researchEmail" class="ph">[Email]</a>. More contact details are in the <a href="#contact">Contact</a> section.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCHER ===================== -->
+    <section id="researcher" class="section reveal" aria-labelledby="researcher-title">
+      <div class="wrap section-grid">
+        <h2 id="researcher-title">Researcher</h2>
+        <div class="content">
+          <dl class="facts">
+            <div><dt>Researcher</dt><dd>Nathaniel James B. Toñacao</dd></div>
+            <div><dt>Program</dt><dd>Master of Arts in Education – English Language Teaching</dd></div>
+            <div><dt>Institution</dt><dd><span data-site="institution" class="ph">[University / College]</span></dd></div>
+            <div><dt>Research adviser</dt><dd><span data-site="adviser" class="ph">[Name]</span></dd></div>
+            <div><dt>Research email</dt><dd><a data-email="researchEmail" class="ph">[Email]</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section reveal" aria-labelledby="contact-title">
+      <div class="wrap section-grid">
+        <h2 id="contact-title">Contact</h2>
+        <div class="content">
+          <p>For questions about the study, your participation, or how your information is handled, please get in touch.</p>
+          <dl class="facts">
+            <div><dt>Researcher</dt><dd>Nathaniel James B. Toñacao<br><a data-email="researchEmail" class="ph">[Email]</a></dd></div>
+            <div><dt>Research adviser</dt><dd><span data-site="adviser" class="ph">[Name]</span><br><span data-site="adviserContact" class="ph">[Adviser contact, if available]</span></dd></div>
+            <div><dt>Institutional contact</dt><dd><span data-site="officeContact" class="ph">[Research or ethics office contact, optional]</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="foot-title">Trends and Practices in Lesson Planning among Pre-Service Teachers</p>
+      <p>Graduate Research Study</p>
+      <p>Researcher: Nathaniel James B. Toñacao</p>
+      <p><span data-site="institution" class="ph">[Institution]</span></p>
+      <p><a data-email="researchEmail" class="ph">[Research Email]</a></p>
+
+      <ul class="footer-links">
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#information">Participant Information</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="footer-note">&copy; 2026 Nathaniel James B. Toñacao. This website supports a graduate research study and is not a commercial site. Content may not be reproduced without permission.</p>
+    </div>
+  </footer>
+
+
+  <!-- =====================================================================
+       SITE SETTINGS  -  EDIT THIS BLOCK
+       ===================================================================== -->
+  <script>
+    window.SITE = {
+      // Researcher and institution (shown in several places; edit once here)
+      institution:   "[University / College]",
+      adviser:       "[Name]",
+      researchEmail: "[Email]",                 // e.g. "name@university.edu.ph"
+      adviserContact:"[Adviser contact, if available]",
+      officeContact: "[Research or ethics office contact, optional]",
+      ethics:        "[Ethics clearance details to be added]",
+
+      // Recruitment: qualitative interview (currently open)
+      interviewOpen:    true,
+      interviewFormUrl: "",                     // e.g. "https://form.jotform.com/XXXXXXXXXXXXXXX"
+
+      // Recruitment: quantitative survey (not yet open)
+      // When the survey begins: set surveyOpen to true and add the form link.
+      surveyOpen:    false,
+      surveyFormUrl: "",                        // e.g. "https://form.jotform.com/YYYYYYYYYYYYYYY"
+
+      // Starting height of embedded forms, in pixels (Jotform usually resizes it automatically)
+      formHeight: 1000
+    };
+  </script>
+
+  <!-- =====================================================================
+       Site behaviour (no need to edit)
+       ===================================================================== -->
+  <script>
+    (function () {
+      var S = window.SITE || {};
+      var root = document.documentElement;
+      root.classList.add('js');
+
+      function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+      function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
+      function isPlaceholder(v) { return /^\[.*\]$/.test((v || '').trim()) || !(v || '').trim(); }
+      function isEmail(v) { return /^[^\s@\[\]]+@[^\s@]+\.[^\s@]+$/.test(v || ''); }
+
+      /* ----- Mobile menu ----- */
+      var toggle = $('.menu-toggle');
+      var nav = $('#site-nav');
+      function closeMenu() {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+      $$('a', nav).forEach(function (a) { a.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('is-open')) { closeMenu(); toggle.focus(); }
+      });
+
+      /* ----- Fill researcher details ----- */
+      $$('[data-site]').forEach(function (el) {
+        var v = S[el.dataset.site];
+        if (v == null) return;
+        el.textContent = v;
+        el.classList.toggle('ph', isPlaceholder(v));
+      });
+      $$('[data-email]').forEach(function (el) {
+        var v = S[el.dataset.email];
+        if (v == null) return;
+        el.textContent = v;
+        if (isEmail(v)) {
+          el.href = 'mailto:' + v;
+          el.classList.remove('ph');
+        } else {
+          el.removeAttribute('href');
+          el.classList.add('ph');
+        }
+      });
+
+      /* ----- Embeds ----- */
+      function mountEmbed(box, url, title) {
+        if (!box || !url) return;
+        var ph = $('.embed-placeholder', box);
+        if (ph) ph.remove();
+        var f = document.createElement('iframe');
+        f.src = url;
+        f.title = title;
+        f.loading = 'lazy';
+        f.setAttribute('allow', 'geolocation; microphone; camera');
+        f.style.height = (S.formHeight || 1000) + 'px';
+        box.appendChild(f);
+      }
+
+      // Jotform tells the page how tall the form is; resize the matching iframe.
+      window.addEventListener('message', function (e) {
+        if (typeof e.data !== 'string' || e.data.indexOf('setHeight:') !== 0) return;
+        var h = parseInt(e.data.split(':')[1], 10);
+        if (!h) return;
+        $$('.embed iframe').forEach(function (f) {
+          if (f.contentWindow === e.source) f.style.height = h + 'px';
+        });
+      });
+
+      /* ----- Recruitment state ----- */
+      function setStatus(name, text, open) {
+        $$('[data-status="' + name + '"]').forEach(function (el) {
+          el.textContent = text;
+          el.classList.toggle('is-open', open);
+        });
+        $$('[data-pathway="' + name + '"]').forEach(function (el) {
+          el.classList.toggle('is-open', open);
+        });
+      }
+      function replaceCta(name, el) {
+        $$('[data-cta="' + name + '"]').forEach(function (old) {
+          var copy = el.cloneNode(true);
+          old.parentNode.replaceChild(copy, old);
+        });
+      }
+
+      // Interview
+      if (S.interviewOpen === false) {
+        setStatus('interview', 'Closed', false);
+        var closedBtn = document.createElement('button');
+        closedBtn.type = 'button'; closedBtn.disabled = true;
+        closedBtn.className = 'btn'; closedBtn.textContent = 'Closed';
+        closedBtn.setAttribute('data-cta', 'interview');
+        replaceCta('interview', closedBtn);
+        $('#embed-interview').hidden = true;
+        $('#interview-closed').hidden = false;
+      } else {
+        mountEmbed($('#embed-interview'), S.interviewFormUrl, 'Interview screening form');
+      }
+
+      // Survey
+      if (S.surveyOpen === true) {
+        setStatus('survey', 'Currently Open', true);
+        var surveyLink = document.createElement('a');
+        surveyLink.className = 'btn'; surveyLink.href = '#participate-survey';
+        surveyLink.textContent = 'Take the Survey';
+        surveyLink.setAttribute('data-cta', 'survey');
+        replaceCta('survey', surveyLink);
+
+        var note = $('[data-survey-note]');
+        if (note) note.textContent = 'Now accepting responses.';
+        var sBox = $('#embed-survey');
+        sBox.hidden = false;
+        mountEmbed(sBox, S.surveyFormUrl, 'Survey');
+      }
+
+      /* ----- Gentle section fade-in ----- */
+      var reveals = $$('.reveal');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!('IntersectionObserver' in window) || reduce) {
+        reveals.forEach(function (el) { el.classList.add('is-visible'); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.05 });
+        reveals.forEach(function (el) { io.observe(el); });
+      }
+    })();
+  </script>
+</body>
+</html>
