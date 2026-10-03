@@ -445,6 +445,27 @@
       .js .rise .line > span { transform: none; }
       .js .hero-rule { transform: none; }
     }
+
+    /* Mobile: show the menu as a row under the header instead of a Menu button */
+    :root { --header-h: 4.75rem; }
+    .menu-toggle { display: none; }
+    .site-header .wrap { flex-wrap: wrap; min-height: 0; padding-top: 0.6rem; }
+    .site-nav {
+      display: block; position: static; width: 100%;
+      background: none; border: 0; padding: 0;
+      overflow-x: auto; scrollbar-width: none;
+    }
+    .site-nav::-webkit-scrollbar { display: none; }
+    .site-nav ul { display: flex; gap: 1.25rem; white-space: nowrap; padding: 0.5rem 0 0.7rem; }
+    .site-nav li + li { border: 0; }
+    .site-nav a { padding: 0.2rem 0; font-size: 0.74rem; }
+
+    @media (min-width: 58rem) {
+      :root { --header-h: 3.25rem; }
+      .site-header .wrap { flex-wrap: nowrap; min-height: var(--header-h); padding-top: 0; }
+      .site-nav { width: auto; overflow: visible; }
+      .site-nav ul { padding: 0; gap: 1.5rem; }
+    }
   </style>
 </head>
 
@@ -514,22 +535,7 @@
           <text x="372" y="453">LEYTE</text>
           <text x="532" y="643">SOUTHERN LEYTE</text>
         </g>
-        <g fill="#a9c3f7" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" letter-spacing="2">
-          <text x="40" y="772">124°E</text>
-          <text x="360" y="772">125°E</text>
-          <text x="680" y="772">126°E</text>
-          <text x="762" y="130" transform="rotate(90 762 130)">12°N</text>
-          <text x="762" y="430" transform="rotate(90 762 430)">11°N</text>
-          <text x="762" y="690" transform="rotate(90 762 690)">10°N</text>
-        </g>
       </svg>
-
-      <div class="wrap">
-        <div class="hero-id">
-          <strong data-site="institution">Cebu Normal University</strong>
-          <span data-site="college">College of Teacher Education</span>
-        </div>
-        <div class="hero-rule" aria-hidden="true"></div>
 
         <h1 id="home-title">
           <span class="hero-big display rise" aria-hidden="false">
