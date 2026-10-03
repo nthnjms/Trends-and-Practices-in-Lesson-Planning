@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  HOW TO EDIT THIS SITE
+  ----------------------------------------------------------------------------
+  1. Scroll to the block marked "SITE SETTINGS" near the bottom of this file.
+     Most things you will change live there:
+       - institution, college, adviser, research email, ethics note
+       - Jotform link for the interview screening form
+       - survey form link and the survey on/off switch (surveyOpen: true)
+       - siteUrl (the web address the QR code points to; optional, see note)
+  2. Anything still shown with a pink dashed outline on the page is a
+     placeholder. Once you replace the value, the outline disappears.
+  3. Colours are set once at the top of the <style> block (look for
+     ":root"). If your poster's blue is different from the one used here,
+     change --blue (and --blue-deep) and the whole site follows.
+  4. Study text (sections 01 to 03 and Participant Information) is plain
+     HTML. Search for "EDIT:" to find passages you may want to change.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trends and Practices in Lesson Planning among Pre-Service Teachers | Participant Recruitment</title>
+  <meta name="description" content="Recruitment and participant information for a graduate mixed-methods study on lesson planning among English pre-service teachers in Eastern Visayas. Interviews are now open.">
+  <meta name="author" content="Nathaniel James B. Toñacao">
+  <meta name="theme-color" content="#1b3fa0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your experience matters: Lesson Planning Research Study">
+  <meta property="og:description" content="English pre-service teachers in Eastern Visayas are invited to take part in a graduate study on lesson planning. Interviews are now open.">
+  <meta property="og:locale" content="en_PH">
+  <!-- EDIT: once the site has its address, add <meta property="og:url" content="https://your-address"> -->
+  <!-- EDIT: to show a preview image when the link is shared, add <meta property="og:image" content="https://your-address/preview.png"> -->
+
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
+
+  <style>
+    /* =====================================================================
+       COLOURS: change these to match the recruitment poster
+       ===================================================================== */
+    :root {
+      --blue: #1b3fa0;        /* main institutional blue */
+      --blue-deep: #0e2468;   /* darker blue for contrast bands */
+      --ink: #0b1a4a;         /* dark text on light backgrounds */
+      --sky: #a9c3f7;         /* lighter blue */
+      --sky-pale: #e6eefc;    /* very light blue background */
+      --cyan: #7fcfdc;        /* muted cyan */
+      --yellow: #ffe27a;      /* highlight yellow */
+      --cream: #fff7dc;       /* warm cream */
+      --pink: #e06fb8;        /* occasional accent */
+      --purple: #8f5fd6;      /* occasional accent */
+
+      --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      --text: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+      --header-h: 3.25rem;
+      --pad: clamp(1.25rem, 4vw, 3rem);
+      --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-h) + 0.5rem);
+      -webkit-text-size-adjust: 100%;
+      background: var(--blue-deep);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--text);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--cream);
+      overflow-x: clip;
+    }
+
+    img, svg, iframe { max-width: 100%; }
+    h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+    ul, ol { padding: 0; list-style: none; }
+
+    a { color: inherit; text-underline-offset: 0.18em; }
+
+    :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+    .on-dark :focus-visible,
+    .site-header :focus-visible { outline-color: var(--yellow); }
+
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 50;
+      background: var(--yellow); color: var(--ink);
+      padding: 0.6rem 1rem; font-weight: 700; font-size: 0.9rem;
+    }
+    .skip-link:focus { top: 0.75rem; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .wrap { width: 100%; max-width: 80rem; margin: 0 auto; padding: 0 var(--pad); }
+
+    /* Placeholders: pink dashed outline, disappears once filled in */
+    .ph { outline: 2px dashed var(--pink); outline-offset: 2px; }
+
+    [hidden] { display: none !important; }
+
+    /* ---------- Shared type ---------- */
+    .display {
+      font-family: var(--display);
+      font-weight: 800;
+      font-stretch: 72%;
+      text-transform: uppercase;
+      line-height: 0.9;
+      letter-spacing: -0.005em;
+    }
+    .label {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hl {
+      background: var(--yellow);
+      color: var(--ink);
+      padding: 0 0.22em;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .hl-cyan { background: var(--cyan); }
+    .hl-pink { background: var(--pink); }
+
+    .on-dark { color: #fff; }
+    .bg-blue { background: var(--blue); }
+    .bg-deep { background: var(--blue-deep); }
+    .bg-pale { background: var(--sky-pale); }
+    .bg-cream { background: var(--cream); }
+    .bg-yellow { background: var(--yellow); }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.6em;
+      font-family: var(--display);
+      font-weight: 800; font-stretch: 85%;
+      font-size: 1.05rem; letter-spacing: 0.04em; text-transform: uppercase;
+      line-height: 1.1;
+      color: var(--ink); background: var(--yellow);
+      border: 3px solid var(--yellow); border-radius: 0;
+      padding: 0.85rem 1.3rem;
+      text-decoration: none; cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+    .btn:hover { background: #fff; border-color: #fff; }
+    .btn .arrow { transition: transform 0.25s var(--ease); }
+    .btn:hover .arrow { transform: translateX(4px); }
+    .btn:disabled, .btn[aria-disabled="true"] {
+      background: transparent; color: rgba(255, 255, 255, 0.72);
+      border-color: rgba(255, 255, 255, 0.4); border-style: dashed;
+      cursor: default;
+    }
+    .btn:disabled:hover { background: transparent; border-color: rgba(255, 255, 255, 0.4); }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky; top: 0; z-index: 30;
+      background: var(--blue-deep); color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+    .site-header .wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: var(--header-h);
+    }
+    .site-name {
+      font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; font-weight: 700;
+    }
+    .menu-toggle {
+      font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: #fff; background: none; border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 0; padding: 0.4rem 0.8rem; cursor: pointer;
+    }
+    .menu-toggle:hover { border-color: #fff; }
+
+    .site-nav {
+      display: none; position: absolute; left: 0; right: 0; top: 100%;
+      background: var(--blue-deep); padding: 0.25rem var(--pad) 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+    .site-nav.is-open { display: block; }
+    .site-nav li + li { border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    .site-nav a {
+      display: block; padding: 0.8rem 0;
+      font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; color: #fff;
+    }
+    .site-nav a:hover { color: var(--yellow); }
+
+    @media (min-width: 58rem) {
+      .menu-toggle { display: none; }
+      .site-nav { display: block; position: static; background: none; border: 0; padding: 0; }
+      .site-nav ul { display: flex; gap: 1.5rem; }
+      .site-nav li + li { border: 0; }
+      .site-nav a { padding: 0.25rem 0; font-size: 0.74rem; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative; overflow: hidden; isolation: isolate;
+      min-height: calc(100svh - var(--header-h));
+      background: var(--blue); color: #fff;
+      padding: 1.75rem 0 3.5rem;
+    }
+    .hero-grid { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+    .hero-map {
+      position: absolute; z-index: -1; right: -22%; top: 2%;
+      width: min(125vw, 920px); height: auto; will-change: transform; opacity: 0.9;
+    }
+    @media (min-width: 58rem) { .hero-map { right: -6%; top: -2%; } }
+
+    .hero-id { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.25rem; }
+    .hero-id strong { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .hero-id span { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em; color: var(--sky); }
+    .hero-rule {
+      height: 2px; background: var(--yellow); margin: 0.9rem 0 2rem;
+      transform-origin: left; width: 100%; max-width: 12rem;
+    }
+
+    .hero h1 { font-weight: 400; }
+    .hero-big {
+      display: block;
+      font-size: clamp(3.3rem, 15.5vw, 11.5rem);
+    }
+    .hero-big .line { display: block; overflow: hidden; padding: 0.02em 0; }
+    .hero-big .line > span { display: block; }
+    .hero-sub {
+      display: block; max-width: 30rem; margin-top: 1.75rem;
+      font-family: var(--text); font-weight: 500; font-stretch: 100%;
+      font-size: clamp(1.05rem, 2.3vw, 1.45rem); line-height: 1.3;
+      text-transform: none; letter-spacing: 0;
+    }
+
+    .hero-lower { display: grid; gap: 2.5rem; margin-top: 2.5rem; }
+    @media (min-width: 58rem) {
+      .hero-lower { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 4rem; align-items: end; margin-top: 3rem; }
+      .hero-lower .criteria-col { padding-top: 2rem; }
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+
+    .criteria li {
+      display: grid; grid-template-columns: 2.25rem 1fr; gap: 0.5rem;
+      padding: 0.9rem 0; border-top: 1px solid rgba(255, 255, 255, 0.35);
+      font-weight: 600; font-size: clamp(1.1rem, 2.4vw, 1.65rem); line-height: 1.4;
+    }
+    .criteria li:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+    .criteria .n { font-family: var(--mono); font-size: 0.8rem; color: var(--sky); padding-top: 0.55em; }
+
+    /* ---------- Pathways ---------- */
+    .pathways { display: grid; }
+    @media (min-width: 58rem) { .pathways { grid-template-columns: 1fr 1fr; } }
+    .pathway { padding: 3rem var(--pad) 3.25rem; border-top: 6px solid var(--sky); }
+    .pathway.is-open { border-top-color: var(--yellow); }
+    @media (min-width: 58rem) {
+      .pathway:first-child { padding-left: max(var(--pad), calc((100vw - 80rem) / 2 + var(--pad))); border-right: 1px solid rgba(255, 255, 255, 0.3); }
+      .pathway:last-child { padding-right: max(var(--pad), calc((100vw - 80rem) / 2 + var(--pad))); }
+    }
+    .pathway .label { color: var(--sky); margin-bottom: 1rem; }
+    .pathway h2 { font-size: clamp(2.6rem, 7.5vw, 5rem); }
+    .tag {
+      display: inline-block; margin: 1.25rem 0 1rem; padding: 0.3rem 0.7rem;
+      font-family: var(--mono); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.85); border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    .tag.is-open { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
+    .pathway .desc { font-size: 1.2rem; max-width: 26rem; margin-bottom: 1.75rem; }
+
+    /* ---------- Embed (Jotform / survey) ---------- */
+    .screening { padding: 4rem 0 4.5rem; }
+    .screening h2 { font-size: clamp(2.4rem, 8vw, 6rem); margin: 0.75rem 0 1rem; }
+    .screening .intro { max-width: 40rem; font-size: 1.1rem; margin-bottom: 2rem; }
+    .screening .intro a { font-weight: 700; }
+
+    .embed {
+      width: 100%; max-width: 100%; overflow: hidden;
+      background: #fff; border: 3px solid var(--blue); border-radius: 0;
+    }
+    .embed iframe { display: block; width: 100%; min-width: 100%; border: 0; }
+    .embed-placeholder { padding: 3.5rem 1.25rem; text-align: center; color: var(--ink); }
+    .embed-placeholder code {
+      display: inline-block; margin-bottom: 0.5rem; font-family: var(--mono);
+      font-size: 0.95rem; font-weight: 700; background: var(--yellow); padding: 0.15rem 0.5rem;
+    }
+    .embed-placeholder p { font-size: 0.95rem; }
+
+    .closed-note { border: 3px solid var(--blue); padding: 1.25rem 1.5rem; background: #fff; }
+
+    /* ---------- Editorial sections ---------- */
+    .section { position: relative; overflow: hidden; padding: 4.5rem 0 5rem; }
+    .section .label { margin-bottom: 1.25rem; }
+    .section h2.display { font-size: clamp(3rem, 11vw, 8.5rem); }
+
+    .numeral {
+      position: absolute; right: -0.04em; top: 0.1em; z-index: 0;
+      font-family: var(--display); font-weight: 900; font-stretch: 70%; line-height: 0.8;
+      font-size: clamp(8rem, 34vw, 24rem);
+      color: transparent; -webkit-text-stroke: 2px currentColor; pointer-events: none; user-select: none;
+    }
+    .section .wrap { position: relative; z-index: 1; }
+    .rise .line { display: block; overflow: hidden; padding: 0.02em 0; }
+    .rise .line > span { display: block; }
+
+    /* 01 */
+    #study { background: var(--cream); }
+    #study .numeral { -webkit-text-stroke-color: var(--blue); opacity: 0.35; }
+    .study-body { display: grid; gap: 2.5rem; margin-top: 2.5rem; }
+    @media (min-width: 58rem) { .study-body { grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 5rem; } }
+    .study-body p { font-size: 1.2rem; line-height: 1.55; margin-bottom: 1.1rem; max-width: 36rem; }
+    .phases li { padding: 1rem 0; border-top: 2px solid var(--ink); }
+    .phases li:last-child { border-bottom: 2px solid var(--ink); }
+    .phases .label { margin: 0 0 0.25rem; }
+    .phases strong { display: block; font-family: var(--display); font-weight: 800; font-stretch: 78%; text-transform: uppercase; font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1; }
+    .phases .state { margin-top: 0.5rem; font-size: 0.98rem; }
+
+    /* 02 */
+    #who { background: var(--blue); color: #fff; }
+    #who .numeral { -webkit-text-stroke-color: #fff; opacity: 0.22; }
+    .statements { margin-top: 2.75rem; }
+    .statements li {
+      display: grid; grid-template-columns: 1fr; gap: 0.5rem;
+      padding: 1.5rem 0 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .statements li:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+    .statements .n { font-family: var(--mono); font-size: 0.85rem; color: var(--sky); letter-spacing: 0.08em; }
+    .statements .big { font-size: clamp(2.5rem, 9vw, 6.5rem); }
+    .statements p { font-size: 1.1rem; max-width: 30rem; color: var(--cream); }
+    @media (min-width: 58rem) {
+      .statements li { grid-template-columns: 6rem minmax(0, 1.4fr) minmax(0, 1fr); align-items: end; gap: 2rem; }
+      .statements .n { padding-bottom: 0.9rem; }
+    }
+    .who-note { margin-top: 2rem; max-width: 40rem; font-size: 1.1rem; }
+    .who-note a { font-weight: 700; }
+
+    /* 03 */
+    #what { background: var(--sky-pale); }
+    #what .numeral { -webkit-text-stroke-color: var(--blue); opacity: 0.3; }
+    .spec { margin-top: 2.75rem; }
+    .spec > div { display: grid; gap: 0.35rem; padding: 1.4rem 0; border-top: 3px solid var(--blue); }
+    .spec > div:last-child { border-bottom: 3px solid var(--blue); }
+    .spec dt { font-family: var(--display); font-weight: 900; font-stretch: 72%; text-transform: uppercase; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 0.95; color: var(--blue); }
+    .spec dd { font-size: 1.25rem; line-height: 1.4; max-width: 34rem; }
+    @media (min-width: 58rem) { .spec > div { grid-template-columns: 22rem 1fr; gap: 2rem; align-items: baseline; } }
+    .what-after { margin-top: 2rem; max-width: 40rem; font-size: 1.1rem; }
+
+    /* Researcher */
+    #researcher { background: var(--blue-deep); color: #fff; padding: 4.5rem 0 5rem; }
+    #researcher h2 { font-size: clamp(2rem, 6vw, 3.6rem); }
+    .researcher-name { font-size: clamp(2.2rem, 7vw, 5.2rem); margin: 1rem 0 1.25rem; }
+    .researcher-prog { font-size: 1.2rem; max-width: 30rem; }
+    .facts { margin-top: 2.25rem; max-width: 46rem; }
+    .facts > div { display: grid; gap: 0.15rem; padding: 0.9rem 0; border-top: 1px solid rgba(255, 255, 255, 0.35); }
+    .facts > div:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+    .facts dt { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sky); }
+    .facts dd { font-size: 1.15rem; }
+    .facts a { color: var(--yellow); }
+    @media (min-width: 40rem) { .facts > div { grid-template-columns: 12rem 1fr; gap: 1.5rem; align-items: baseline; } }
+
+    /* Participant information: the formal, readable part */
+    #information { background: #fff; padding: 4.5rem 0 5rem; border-top: 8px solid var(--blue); }
+    .info-grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 64rem) { .info-grid { grid-template-columns: 17rem minmax(0, 44rem); gap: 4rem; } .info-grid > h2 { position: sticky; top: calc(var(--header-h) + 1.5rem); align-self: start; } }
+    #information h2 { font-size: clamp(2.2rem, 6vw, 3.6rem); color: var(--blue); }
+    .formal { font-size: 1.1rem; line-height: 1.7; }
+    .formal p, .formal ul { margin-bottom: 1.1rem; }
+    .formal ul { padding-left: 1.2rem; list-style: disc; }
+    .formal li { margin-bottom: 0.4rem; }
+    .formal h3 {
+      font-family: var(--text); font-weight: 800; font-size: 1.2rem; line-height: 1.3;
+      margin: 2.4rem 0 0.5rem; padding-top: 0.9rem; border-top: 2px solid var(--blue); color: var(--blue-deep);
+    }
+    .formal > :first-child { margin-top: 0; }
+    .formal a { color: var(--blue); font-weight: 600; }
+
+    /* Contact */
+    #contact { background: var(--cream); padding: 4rem 0; border-top: 1px solid var(--ink); }
+    #contact h2 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+    #contact .facts { margin-top: 1.75rem; }
+    #contact .facts > div { border-color: var(--ink); }
+    #contact .facts dt { color: var(--blue); }
+    #contact .facts a { color: var(--blue); font-weight: 700; }
+
+    /* QR */
+    #scan { background: var(--yellow); padding: 4.5rem 0 5rem; }
+    .scan-grid { display: grid; gap: 2.5rem; align-items: center; }
+    @media (min-width: 58rem) { .scan-grid { grid-template-columns: minmax(0, 1fr) auto; gap: 5rem; } }
+    #scan .label { color: var(--blue-deep); }
+    #scan h2 { font-size: clamp(2.8rem, 10vw, 7rem); margin: 0.5rem 0 1.25rem; }
+    #scan .scan-line { font-family: var(--display); font-weight: 900; font-stretch: 72%; text-transform: uppercase; font-size: clamp(1.6rem, 5vw, 3rem); line-height: 1; color: var(--blue); }
+    #scan p.sub { margin-top: 1.25rem; max-width: 30rem; font-size: 1.1rem; }
+    .qr-tile { background: #fff; border: 4px solid var(--blue-deep); padding: 1rem; width: min(100%, 19rem); }
+    .qr-box { aspect-ratio: 1 / 1; display: grid; place-items: center; }
+    .qr-box svg { width: 100%; height: auto; display: block; }
+    .qr-box p { font-size: 0.9rem; text-align: center; padding: 1rem; }
+    .qr-url { font-family: var(--mono); font-size: 0.78rem; margin-top: 0.75rem; word-break: break-all; }
+    .qr-dl {
+      margin-top: 0.75rem; display: inline-block; font-family: var(--mono); font-size: 0.78rem;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue-deep);
+      background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 0.2em;
+    }
+
+    /* Footer */
+    .site-footer { background: var(--blue-deep); color: #fff; padding: 5rem 0 3rem; }
+    .thanks { font-size: clamp(2.6rem, 10.5vw, 8.5rem); }
+    .thanks .line { display: block; overflow: hidden; padding: 0.02em 0; }
+    .thanks .line > span { display: block; }
+    .foot-grid { display: grid; gap: 2rem; margin-top: 3.5rem; padding-top: 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.35); }
+    @media (min-width: 48rem) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+    .foot-grid p { font-size: 1rem; }
+    .foot-grid .label { color: var(--sky); margin-bottom: 0.4rem; }
+    .foot-grid a { color: var(--yellow); }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 2.5rem; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .foot-links a { color: #fff; }
+    .foot-links a:hover { color: var(--yellow); }
+    .foot-note { margin-top: 1.5rem; max-width: 42rem; font-size: 0.85rem; color: var(--sky); }
+
+    /* ---------- Motion ---------- */
+    .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+    .js .reveal.is-visible { opacity: 1; transform: none; }
+
+    .js .rise .line > span { transform: translateY(108%); transition: transform 0.9s var(--ease); transition-delay: calc(var(--i, 0) * 90ms); }
+    .js .rise.is-visible .line > span { transform: none; }
+
+    .js .hero-rule { transform: scaleX(0); transition: transform 1s var(--ease) 0.2s; }
+    .js .hero.is-ready .hero-rule { transform: scaleX(1); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+      .js .reveal { opacity: 1; transform: none; }
+      .js .rise .line > span { transform: none; }
+      .js .hero-rule { transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="#home">Lesson Planning Study</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#study">The Study</a></li>
+          <li><a href="#who">Who Can Join</a></li>
+          <li><a href="#participate">Participate</a></li>
+          <li><a href="#information">Information</a></li>
+          <li><a href="#researcher">Researcher</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero on-dark" aria-labelledby="home-title">
+      <svg class="hero-grid" aria-hidden="true" focusable="false">
+        <defs>
+          <pattern id="grid" width="88" height="88" patternUnits="userSpaceOnUse">
+            <path d="M88 0H0V88" fill="none" stroke="#a9c3f7" stroke-opacity="0.22" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+
+      <!-- Abstract map treatment: contour lines, coordinate ticks, province labels.
+           Decorative only. Replace with a licensed map or photo if you have one. -->
+      <svg class="hero-map" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#a9c3f7" stroke-opacity="0.45" stroke-width="1.3">
+          <path d="M747 330C742 345 733 359 724 372C715 385 704 396 694 408C684 419 675 430 666 441C657 452 649 463 640 474C631 485 622 497 611 507C599 518 587 528 572 536C558 544 541 550 525 554C508 558 489 559 472 559C454 559 437 557 420 555C403 552 387 548 371 545C356 542 340 538 325 534C309 530 294 526 279 521C264 515 249 510 235 502C221 495 208 486 196 476C185 467 175 456 166 445C156 433 148 422 140 409C132 397 125 385 117 372C110 358 102 345 97 330C91 315 86 299 85 284C84 268 86 252 92 237C98 222 108 207 122 196C135 184 153 174 171 167C188 159 209 155 228 152C247 148 266 147 283 145C301 144 316 143 332 141C347 139 361 136 376 134C390 131 405 128 420 126C435 124 451 122 467 121C483 121 500 122 516 124C532 126 548 130 565 135C581 139 597 145 612 151C628 157 645 164 660 173C675 181 691 191 704 202C717 213 730 226 738 240C746 253 752 269 753 284C755 299 752 315 747 330Z"/>
+          <path d="M668 330C671 341 674 353 673 365C673 376 670 389 664 399C659 410 650 420 640 429C631 438 619 446 607 453C596 459 583 465 572 471C560 477 549 483 538 489C526 495 515 501 503 507C490 513 478 519 464 524C450 529 435 533 420 535C405 537 389 538 373 537C358 536 342 533 327 529C312 526 297 521 283 516C268 510 254 504 241 497C228 489 214 481 203 472C193 462 182 451 176 440C169 428 165 415 164 403C163 390 166 377 170 364C174 352 181 341 188 330C195 319 203 310 209 301C216 292 221 284 225 275C229 266 232 257 235 246C238 236 239 225 243 214C248 203 252 191 260 181C267 171 277 160 288 152C299 143 313 136 327 131C341 125 357 121 372 118C388 115 404 114 420 113C436 113 453 113 469 115C485 117 501 120 516 124C531 129 546 135 558 143C571 151 582 161 591 171C600 181 607 193 613 204C619 215 623 226 627 237C631 247 635 258 640 268C644 278 649 287 654 298C659 308 664 319 668 330Z"/>
+          <path d="M662 330C664 341 664 353 661 363C658 374 652 385 644 394C636 403 625 411 613 417C602 423 588 428 576 432C564 436 551 439 540 442C529 445 519 448 510 451C500 455 491 459 482 463C472 467 463 472 453 475C443 479 431 483 420 485C409 487 396 488 384 487C373 487 360 485 349 482C337 480 326 476 315 472C304 468 293 463 282 458C272 453 261 447 252 440C242 434 233 426 225 418C218 409 212 400 208 390C204 380 203 370 203 360C202 350 205 340 207 330C209 320 213 311 216 302C219 293 222 284 225 275C229 266 232 256 236 247C240 238 245 228 251 219C258 211 266 202 276 196C285 189 297 184 309 180C321 177 335 176 348 176C361 175 374 177 386 179C398 180 409 183 420 185C431 186 441 188 452 190C462 191 473 192 484 193C495 195 506 196 517 199C528 202 539 205 550 210C560 214 570 219 580 226C589 232 598 239 606 246C614 254 622 262 630 271C637 279 644 289 650 298C655 308 660 319 662 330Z"/>
+          <path d="M570 330C568 337 566 343 564 350C562 356 561 363 560 370C558 376 557 384 555 391C553 398 550 406 546 413C542 420 537 427 530 433C524 439 516 444 508 449C500 454 491 458 481 461C472 465 462 468 452 470C441 472 431 474 420 474C409 474 398 474 388 472C377 471 367 468 358 463C349 459 341 453 334 446C327 440 323 432 319 424C315 417 312 409 310 402C307 395 305 389 302 383C299 377 296 372 292 366C288 361 283 356 278 350C273 343 268 337 264 330C261 323 257 315 256 307C255 300 256 292 258 284C260 276 264 269 269 262C273 255 279 248 286 242C292 236 299 230 307 225C314 219 322 214 331 210C340 206 349 202 359 199C369 197 379 196 390 195C400 195 410 196 420 198C430 200 439 203 448 206C457 208 465 212 474 215C482 218 490 220 499 224C507 227 516 229 524 233C533 237 541 241 549 246C556 251 563 257 567 264C572 270 575 278 576 286C578 293 577 301 576 309C575 316 572 323 570 330Z"/>
+          <path d="M526 330C525 335 524 339 523 344C522 349 522 354 521 359C521 364 520 369 519 375C518 380 516 386 514 391C511 396 507 402 502 406C497 410 490 414 484 416C477 419 470 420 462 421C455 422 448 422 441 422C434 422 427 422 420 422C413 422 406 422 399 422C392 421 385 421 378 420C371 419 363 418 356 416C350 414 343 411 337 407C331 403 326 399 322 394C318 389 315 384 312 379C309 374 307 368 305 363C303 357 302 352 301 346C301 341 300 335 301 330C301 325 303 319 305 314C307 309 311 304 315 300C318 296 323 292 328 289C332 285 337 282 342 279C346 276 350 272 354 269C358 265 362 261 366 257C370 252 374 247 379 243C385 239 391 234 397 230C404 227 412 224 420 223C428 222 436 222 444 223C452 224 460 227 467 230C474 233 480 237 486 241C492 245 497 250 501 254C506 259 510 264 514 269C518 273 521 278 523 284C525 289 527 294 528 299C529 305 528 310 528 315C528 320 527 325 526 330Z"/>
+          <path d="M492 330C492 333 493 337 493 340C493 344 494 347 493 351C492 354 491 358 489 361C487 364 484 367 481 370C478 372 474 375 470 376C466 378 461 379 457 380C453 382 449 383 445 384C441 385 437 386 433 388C429 389 425 390 420 392C415 393 410 394 406 394C401 394 395 394 390 393C386 392 381 391 377 389C372 387 368 384 365 381C362 378 359 375 357 372C354 368 352 365 350 361C349 358 347 354 346 351C345 347 345 344 345 340C345 337 346 333 347 330C348 327 350 324 352 321C354 318 356 315 358 313C360 310 362 307 364 305C365 302 366 299 368 296C369 293 370 289 372 286C374 282 376 278 379 275C382 271 386 268 390 266C394 264 399 262 404 261C409 260 415 260 420 261C425 261 430 263 435 264C440 266 444 268 448 270C452 272 456 274 460 276C464 278 467 280 471 283C474 286 477 288 479 291C482 294 484 297 485 301C487 304 487 307 488 311C489 314 489 317 490 320C491 324 491 327 492 330Z"/>
+          <path d="M463 330C463 332 464 334 464 336C464 338 464 340 463 342C462 344 461 346 459 347C457 349 455 350 452 351C450 352 447 353 445 353C443 354 440 354 438 354C436 354 434 354 432 355C430 355 428 356 426 356C424 356 422 357 420 357C418 358 416 358 414 358C411 358 409 358 407 358C405 358 402 357 400 357C398 356 396 355 394 355C391 354 389 353 387 352C385 350 383 349 381 347C379 346 378 344 377 342C376 340 375 338 375 336C375 334 376 332 376 330C377 328 379 326 380 324C381 323 383 321 384 320C386 318 387 317 388 316C390 314 391 313 392 312C393 310 394 309 396 307C397 306 399 305 400 303C402 302 404 301 406 301C408 300 411 300 413 300C415 300 418 300 420 300C422 300 424 300 427 301C429 301 431 301 433 302C435 302 437 303 440 304C442 304 444 305 446 306C448 307 449 308 451 310C452 311 454 313 455 314C456 316 457 318 458 319C459 321 460 323 460 324C461 326 462 328 463 330Z"/>
+          <path d="M725 640C722 649 719 658 715 667C711 675 706 684 700 691C694 699 687 706 680 712C673 719 665 724 657 730C650 736 642 741 635 747C627 752 620 759 613 765C605 772 598 780 588 787C579 793 569 801 558 807C546 812 533 817 520 819C507 821 493 820 480 818C467 816 454 810 443 805C432 799 423 791 413 784C404 777 396 770 388 763C379 756 370 750 362 744C353 737 343 731 334 724C325 717 316 709 309 700C302 691 296 681 293 671C291 661 290 650 292 640C294 630 298 620 303 610C308 601 315 592 322 584C328 575 336 568 343 560C351 553 358 546 366 540C375 533 384 527 394 522C403 518 414 514 425 511C435 509 447 508 458 507C469 506 479 506 490 505C500 504 509 504 520 502C531 500 541 497 553 494C565 491 579 486 593 484C607 481 624 479 639 480C654 480 670 483 683 488C697 493 709 501 718 511C726 520 732 532 736 543C739 554 740 566 739 578C739 589 736 600 734 611C732 621 729 631 725 640Z"/>
+          <path d="M683 640C680 647 675 654 669 661C664 667 657 672 651 677C646 682 639 687 634 692C629 696 625 701 622 707C618 712 616 719 612 725C608 732 605 740 599 747C594 754 587 762 579 767C571 773 561 777 552 780C542 782 530 782 520 782C510 781 499 778 489 775C480 772 471 768 462 764C453 761 445 757 436 753C428 749 419 745 411 741C403 737 395 732 388 727C380 721 374 715 369 708C364 701 360 694 358 686C355 679 354 671 354 663C354 655 354 648 355 640C356 632 356 625 358 618C360 610 361 603 364 596C367 589 371 581 376 575C381 569 388 563 396 559C404 554 413 551 422 549C431 547 441 546 449 544C458 543 466 543 474 541C482 539 488 537 496 534C504 531 511 527 520 523C529 519 539 514 549 511C560 508 572 505 583 505C595 504 607 506 617 509C628 512 638 517 646 523C654 529 661 536 667 544C673 551 677 560 680 568C684 576 687 584 688 592C690 600 690 609 689 617C689 625 687 633 683 640Z"/>
+          <path d="M623 640C624 645 625 650 624 654C624 659 623 664 622 669C620 674 618 678 615 683C613 688 610 692 607 697C603 701 600 706 596 711C592 715 588 720 583 724C577 729 571 733 565 736C558 739 551 742 543 743C536 744 527 743 520 742C513 741 505 738 498 736C492 733 485 730 479 727C473 724 468 721 462 719C456 716 449 714 443 711C437 709 430 706 424 703C418 700 411 696 407 691C402 686 399 681 397 675C395 669 395 663 396 657C397 651 399 645 402 640C405 635 408 630 411 625C414 620 418 616 420 612C423 607 426 603 429 599C432 595 435 591 439 587C442 583 446 579 451 576C455 572 460 569 466 566C471 563 476 561 482 558C487 555 493 552 500 549C506 546 513 543 520 540C527 538 536 535 544 533C553 532 562 531 570 532C579 533 587 536 594 540C601 544 607 550 611 556C615 562 617 569 618 576C620 582 620 589 620 595C620 601 619 607 619 612C620 617 620 621 621 626C621 631 623 635 623 640Z"/>
+          <path d="M595 640C596 643 597 647 598 651C599 655 601 659 601 663C602 667 602 672 601 676C600 681 598 685 594 689C591 692 586 695 582 697C577 699 571 700 565 701C559 701 554 701 548 700C543 700 538 699 533 698C528 697 524 697 520 696C516 695 512 694 508 693C504 692 500 691 497 690C493 689 490 687 486 686C483 684 480 682 477 680C473 679 470 677 467 675C463 673 459 671 455 669C451 667 446 665 442 662C438 659 434 656 431 652C428 649 426 644 425 640C425 636 425 631 427 627C429 623 432 619 435 616C439 613 443 610 447 607C452 605 456 603 460 601C464 598 467 596 471 594C474 592 477 589 481 587C485 585 489 583 493 582C497 580 501 579 506 578C511 578 515 578 520 578C525 579 529 580 533 581C538 582 542 583 546 585C550 586 554 588 558 589C562 591 566 592 569 594C573 596 576 599 579 601C582 604 585 607 587 610C589 613 590 617 591 620C592 623 592 627 592 630C593 633 594 637 595 640Z"/>
+          <path d="M561 640C562 642 563 644 564 646C564 648 565 651 566 653C566 655 566 658 565 660C565 663 563 665 562 667C560 669 557 671 554 672C551 673 548 673 545 673C542 674 538 673 535 673C532 673 530 672 527 672C525 671 522 671 520 671C518 671 515 671 513 670C511 670 508 670 506 670C504 669 502 669 499 668C497 667 495 666 494 665C492 663 490 662 489 661C487 659 486 658 484 656C483 655 481 653 480 651C478 650 477 648 476 646C475 644 474 642 474 640C474 638 474 636 475 634C476 632 477 630 478 628C479 626 481 625 483 623C484 622 486 620 487 619C489 617 490 615 491 613C493 612 494 610 496 608C498 606 500 605 503 603C505 602 508 601 511 601C514 600 517 601 520 601C523 602 526 603 528 605C530 606 533 608 534 609C536 610 538 612 540 613C541 615 543 616 544 617C546 619 547 620 549 621C550 623 552 624 553 625C554 627 555 628 556 630C557 631 558 633 558 635C559 636 560 638 561 640Z"/>
+        </g>
+        <g stroke="#ffe27a" stroke-width="1.5" stroke-opacity="0.9">
+          <path d="M432 168h12M438 162v12"/>
+          <path d="M392 258h12M398 252v12"/>
+          <path d="M552 328h12M558 322v12"/>
+          <path d="M292 338h12M298 332v12"/>
+          <path d="M352 448h12M358 442v12"/>
+          <path d="M512 638h12M518 632v12"/>
+        </g>
+        <g fill="#fff" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2.5">
+          <text x="452" y="173">NORTHERN SAMAR</text>
+          <text x="412" y="263">SAMAR</text>
+          <text x="572" y="333">EASTERN SAMAR</text>
+          <text x="236" y="318" text-anchor="start">BILIRAN</text>
+          <text x="372" y="453">LEYTE</text>
+          <text x="532" y="643">SOUTHERN LEYTE</text>
+        </g>
+        <g fill="#a9c3f7" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" letter-spacing="2">
+          <text x="40" y="772">124°E</text>
+          <text x="360" y="772">125°E</text>
+          <text x="680" y="772">126°E</text>
+          <text x="762" y="130" transform="rotate(90 762 130)">12°N</text>
+          <text x="762" y="430" transform="rotate(90 762 430)">11°N</text>
+          <text x="762" y="690" transform="rotate(90 762 690)">10°N</text>
+        </g>
+      </svg>
+
+      <div class="wrap">
+        <div class="hero-id">
+          <strong data-site="institution">Cebu Normal University</strong>
+          <span data-site="college">College of Teacher Education</span>
+        </div>
+        <div class="hero-rule" aria-hidden="true"></div>
+
+        <h1 id="home-title">
+          <span class="hero-big display rise" aria-hidden="false">
+            <span class="line" style="--i:0"><span>Your</span></span>
+            <span class="line" style="--i:1"><span>Experience</span></span>
+            <span class="line" style="--i:2"><span><span class="hl">Matters</span></span></span>
+          </span>
+          <span class="sr-only">: </span>
+          <span class="hero-sub">Trends and Practices in Lesson Planning among Pre-Service Teachers</span>
+        </h1>
+
+        <div class="hero-lower">
+          <div>
+            <p class="label" style="color: var(--sky)">Graduate research study &middot; Mixed methods</p>
+            <div class="hero-actions">
+              <a class="btn" href="#screening" data-goto="screening" data-cta="interview">Join the Interview <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <button class="btn" type="button" disabled data-cta="survey">Survey Coming Soon</button>
+            </div>
+          </div>
+
+          <div class="criteria-col">
+            <p class="label" style="color: var(--sky); margin-bottom: 0.75rem">Who we are looking for</p>
+            <ol class="criteria">
+              <li><span class="n">01</span><span>currently enrolled in the <span class="hl">Bachelor of Secondary Education major in English</span></span></li>
+              <li><span class="n">02</span><span>actively participating in or have completed <span class="hl hl-cyan">practicum or student teaching</span></span></li>
+              <li><span class="n">03</span><span>from an HEI within <span class="hl hl-pink">Eastern Visayas, Philippines</span></span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICIPATION PATHWAYS ===================== -->
+    <section id="participate" class="bg-deep on-dark" aria-label="Ways to participate">
+      <div class="pathways">
+        <section class="pathway is-open" data-pathway="interview" aria-labelledby="pw-interview">
+          <p class="label">Phase 1</p>
+          <h2 id="pw-interview" class="display">Qualitative<br>Interview</h2>
+          <p class="tag is-open" data-status="interview">NOW OPEN</p>
+          <p class="desc">Share your experiences and practices in lesson planning.</p>
+          <a class="btn" href="#screening" data-goto="screening" data-cta="interview">Join the Interview <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </section>
+
+        <section class="pathway" data-pathway="survey" aria-labelledby="pw-survey">
+          <p class="label">Phase 2</p>
+          <h2 id="pw-survey" class="display">Quantitative<br>Survey</h2>
+          <p class="tag" data-status="survey">COMING SOON</p>
+          <p class="desc" data-survey-note>The survey phase will open at a later stage of the study.</p>
+          <button class="btn" type="button" disabled data-cta="survey">Survey Coming Soon</button>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICIPANT SCREENING (embedded form) ===================== -->
+    <section id="screening" class="screening bg-pale" aria-labelledby="screening-title">
+      <div class="wrap">
+        <p class="label">Interview phase &middot; Step 1</p>
+        <h2 id="screening-title" class="display" tabindex="-1">Participant<br>Screening</h2>
+        <p class="intro">This short form confirms that the interview suits your situation. After you submit it, further study information is sent to your email. <a href="#study">Want to know more first?</a></p>
+
+        <!--
+          EDIT: JOTFORM EMBED (interview screening)
+          Do not edit here. Paste your form link into SITE SETTINGS at the bottom
+          of this file (interviewFormUrl). The form then appears in this box.
+        -->
+        <div class="embed" id="embed-interview">
+          <div class="embed-placeholder">
+            <code>[JOTFORM_EMBED_HERE]</code>
+            <p>The screening form will appear here.</p>
+          </div>
+        </div>
+
+        <div class="closed-note" id="interview-closed" hidden>
+          <p>The interview phase is no longer accepting new participants.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Survey form: stays hidden until surveyOpen is set to true in SITE SETTINGS -->
+    <section id="survey-form" class="screening bg-cream" aria-labelledby="survey-title" hidden>
+      <div class="wrap">
+        <p class="label">Survey phase</p>
+        <h2 id="survey-title" class="display" tabindex="-1">The<br>Survey</h2>
+        <p class="intro">Now accepting responses.</p>
+        <!-- EDIT: SURVEY EMBED. Add surveyFormUrl in SITE SETTINGS. -->
+        <div class="embed" id="embed-survey">
+          <div class="embed-placeholder">
+            <code>[QUANTITATIVE_FORM_EMBED_HERE]</code>
+            <p>The survey will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 01 THE STUDY ===================== -->
+    <section id="study" class="section" aria-labelledby="study-title">
+      <div class="numeral" aria-hidden="true">01</div>
+      <div class="wrap">
+        <p class="label">01 &mdash; The Study</p>
+        <h2 id="study-title" class="display rise reveal-lines">
+          <span class="line" style="--i:0"><span>Why</span></span>
+          <span class="line" style="--i:1"><span>this study?</span></span>
+        </h2>
+
+        <div class="study-body">
+          <!-- EDIT: study description -->
+          <div class="reveal">
+            <p>Lesson planning is where a pre-service teacher's training turns into a plan for a real classroom. It is also where many struggle most. Knowing the frameworks is one thing; building lessons whose objectives, activities, and assessments hold together is another.</p>
+            <p>Planning is also changing. AI tools, digital platforms, learner-centered approaches, and competency-based expectations all place new demands on teachers, and the preparation offered by teacher education programs is not the same from one institution to the next.</p>
+            <p>This study asks how English pre-service teachers in Eastern Visayas plan their lessons, what they make of these changes, and how their institutions' preparation shapes both. Their experiences come first, in interviews. A survey built from those interviews follows, and a statistical method called structural equation modeling then examines how the pieces fit together.</p>
+          </div>
+
+          <ol class="phases reveal">
+            <li>
+              <p class="label">Phase 1</p>
+              <strong>Interviews</strong>
+              <p class="state"><span class="hl">Open now</span></p>
+            </li>
+            <li>
+              <p class="label">Phase 2</p>
+              <strong>Survey</strong>
+              <p class="state">Opens at a later stage of the study.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 WHO CAN PARTICIPATE ===================== -->
+    <section id="who" class="section on-dark" aria-labelledby="who-title">
+      <div class="numeral" aria-hidden="true">02</div>
+      <div class="wrap">
+        <p class="label" style="color: var(--sky)">02 &mdash; Who Can Participate</p>
+        <h2 id="who-title" class="display rise">
+          <span class="line" style="--i:0"><span>Is this</span></span>
+          <span class="line" style="--i:1"><span>you?</span></span>
+        </h2>
+
+        <ol class="statements">
+          <li class="reveal">
+            <span class="n">01</span>
+            <span class="big display">BSEd <span class="hl">English</span></span>
+            <p>Enrolled in the Bachelor of Secondary Education program majoring in English, or an equivalent program.</p>
+          </li>
+          <li class="reveal">
+            <span class="n">02</span>
+            <span class="big display">Practicum / <span class="hl hl-cyan">Student Teaching</span></span>
+            <p>Currently doing, or have recently completed, Field Study or Practice Teaching.</p>
+          </li>
+          <li class="reveal">
+            <span class="n">03</span>
+            <span class="big display"><span class="hl hl-pink">Eastern Visayas</span></span>
+            <p>Studying at a higher education institution in Eastern Visayas, Philippines.</p>
+          </li>
+        </ol>
+
+        <p class="who-note reveal">For the interviews, we also ask that you have submitted at least three formal lesson plans. Not sure whether you qualify? <a href="#screening">The screening form</a> will tell you.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 03 WHAT WILL I DO ===================== -->
+    <section id="what" class="section" aria-labelledby="what-title">
+      <div class="numeral" aria-hidden="true">03</div>
+      <div class="wrap">
+        <p class="label">03 &mdash; What Will I Do?</p>
+        <h2 id="what-title" class="display rise">
+          <span class="line" style="--i:0"><span>What will</span></span>
+          <span class="line" style="--i:1"><span>I do?</span></span>
+        </h2>
+
+        <!-- EDIT: interview details -->
+        <dl class="spec">
+          <div class="reveal"><dt>What</dt><dd>An individual research interview.</dd></div>
+          <div class="reveal"><dt>Why</dt><dd>To understand your experiences and practices in lesson planning.</dd></div>
+          <div class="reveal"><dt>Format</dt><dd>In person at your institution or by video call, depending on where you are. <span class="ph">[Researcher will finalize]</span></dd></div>
+          <div class="reveal"><dt>Time</dt><dd>About 45 to 60 minutes. <span class="ph">[Confirm duration]</span></dd></div>
+        </dl>
+
+        <p class="what-after reveal">You may answer in English, Filipino, or your regional language. Taking part is voluntary, and you can stop at any time. Everything is explained in <a href="#information">Participant Information</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCHER ===================== -->
+    <section id="researcher" class="on-dark" aria-labelledby="researcher-title">
+      <div class="wrap">
+        <p class="label" style="color: var(--sky)">The Researcher</p>
+        <h2 id="researcher-title" class="sr-only">The Researcher</h2>
+        <p class="researcher-name display reveal">Nathaniel James B. Toñacao</p>
+        <p class="researcher-prog reveal">Master of Arts in Education &ndash; English Language Teaching<br><span data-site="institution">Cebu Normal University</span></p>
+
+        <dl class="facts reveal">
+          <div><dt>Research Adviser</dt><dd><span data-site="adviser" class="ph">[Name]</span></dd></div>
+          <div><dt>Research Email</dt><dd><a data-email="researchEmail" class="ph">[Email]</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== PARTICIPANT INFORMATION ===================== -->
+    <section id="information" aria-labelledby="info-title">
+      <div class="wrap info-grid">
+        <h2 id="info-title" class="display">Participant<br>Information</h2>
+
+        <div class="formal">
+          <p>Please read this before deciding whether to take part. You are welcome to ask questions at any point (see <a href="#contact">Contact</a>).</p>
+
+          <h3>Purpose of the study</h3>
+          <p>The study looks at how English pre-service teachers plan their lessons, how recent developments such as AI tools, digital technologies, learner-centered approaches, and competency-based planning fit into that work, and how institutional preparation relates to lesson planning competence. It aims to inform recommendations for strengthening lesson planning preparation in English teacher education.</p>
+
+          <h3>Who may participate</h3>
+          <p>You may take part if you are:</p>
+          <ul>
+            <li>enrolled in a Bachelor of Secondary Education program majoring in English, or an equivalent program, at a participating institution in Eastern Visayas;</li>
+            <li>currently doing, or have recently completed, Field Study or Practice Teaching; and</li>
+            <li>willing to take part voluntarily and give your consent.</li>
+          </ul>
+          <p>For the interviews, we also ask that you have submitted at least three formal lesson plans, so that you have enough planning experience to talk about.</p>
+
+          <h3>What participation involves</h3>
+          <p><strong>Interview.</strong> One individual conversation, in person at your institution or by video call (for example Zoom or Google Meet). You may answer in English, Filipino, or your regional language. With your permission, the conversation is audio-recorded. You may be asked to describe a lesson plan you have recently submitted, but you will not be asked to hand it over.</p>
+          <p><strong>Survey.</strong> A questionnaire in which you rate how much you agree with statements about your lesson planning and your preparation. It is completed on your own, online or on paper, and opens at a later stage of the study.</p>
+
+          <h3>Time commitment</h3>
+          <p>An interview takes about 45 to 60 minutes. The survey is expected to take about 20 to 25 minutes. <span class="ph">[Confirm final time estimates]</span></p>
+
+          <h3>Taking part is voluntary</h3>
+          <p>You decide whether to participate. You may skip any question, stop at any time, and withdraw without giving a reason. Whether or not you take part will have no effect on your grades, your practicum evaluation, or your standing at your institution. Invitations are not made through your own course instructors or practicum supervisors.</p>
+          <p>A small token of appreciation is planned for participants. It does not depend on what you say. <span class="ph">[Confirm details]</span></p>
+
+          <h3>Possible risks and benefits</h3>
+          <p>The risks are small. Some people may feel a little uncomfortable when reflecting on difficulties in their planning. You can decline any question. There is no direct personal benefit, but your responses will help inform recommendations for improving lesson planning preparation in teacher education.</p>
+
+          <h3 id="privacy">Confidentiality and how your information is handled</h3>
+          <ul>
+            <li>Your name is replaced with a code when interviews are transcribed and when survey responses are entered.</li>
+            <li>Audio recordings, transcripts, and survey data are kept in password-protected storage accessible only to the researcher and authorized members of the research team.</li>
+            <li>Results are reported as themes or group-level findings. Nothing that identifies you will be published.</li>
+            <li>Information is handled in line with the Data Privacy Act of 2012 (Republic Act No. 10173).</li>
+            <li>Data are kept for at least five years after the study is completed, then permanently deleted.</li>
+          </ul>
+
+          <h3>How your information will be used</h3>
+          <p>What you share will be used only for this study: for the thesis, and for any related presentations or publications. Interview themes will be used to build the survey. Information will not be shared with anyone outside the research team without your written consent and ethics committee approval.</p>
+
+          <h3>Ethics review</h3>
+          <p><span data-site="ethics" class="ph">[Ethics clearance details to be added]</span></p>
+
+          <h3>Questions</h3>
+          <p>If you have questions about the study or your participation, email <a data-email="researchEmail" class="ph">[Email]</a>. More contact details are in the <a href="#contact">Contact</a> section.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="display">Contact</h2>
+        <dl class="facts">
+          <div><dt>Researcher</dt><dd>Nathaniel James B. Toñacao<br><a data-email="researchEmail" class="ph">[Email]</a></dd></div>
+          <div><dt>Research adviser</dt><dd><span data-site="adviser" class="ph">[Name]</span><br><span data-site="adviserContact" class="ph">[Adviser contact, if available]</span></dd></div>
+          <div><dt>Institutional contact</dt><dd><span data-site="officeContact" class="ph">[Research or ethics office contact, optional]</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== QR ===================== -->
+    <section id="scan" aria-labelledby="scan-title">
+      <div class="wrap scan-grid">
+        <div>
+          <p class="label">Recruitment hub</p>
+          <h2 id="scan-title" class="display">Ready to<br>participate?</h2>
+          <p class="scan-line">Scan. Screen. Share.</p>
+          <p class="sub">Scan the code to open this page on your phone, complete the screening form, and pass the link to a classmate who may also qualify.</p>
+        </div>
+
+        <div class="qr-tile">
+          <div class="qr-box" id="qr-box"><p>The QR code appears when the site is online.</p></div>
+          <p class="qr-url" id="qr-url"></p>
+          <button class="qr-dl" id="qr-download" type="button" hidden>Download QR code (SVG)</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="thanks display rise" aria-label="Thank you for contributing to this research.">
+        <span class="line" style="--i:0"><span>Thank you</span></span>
+        <span class="line" style="--i:1"><span>for contributing</span></span>
+        <span class="line" style="--i:2"><span>to <span class="hl">this research.</span></span></span>
+      </p>
+
+      <div class="foot-grid">
+        <div>
+          <p class="label">Researcher</p>
+          <p>Nathaniel James B. Toñacao<br>
+            <span data-site="institution">Cebu Normal University</span><br>
+            <span data-site="college">College of Teacher Education</span></p>
+        </div>
+        <div>
+          <p class="label">Research email</p>
+          <p><a data-email="researchEmail" class="ph">[Research Email]</a></p>
+        </div>
+      </div>
+
+      <ul class="foot-links">
+        <li><a href="#information">Participant Information</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ul>
+
+      <p class="foot-note">&copy; 2026 Nathaniel James B. Toñacao. Trends and Practices in Lesson Planning among Pre-Service Teachers is a graduate research study. This website is not a commercial site, and the institution's name is used to identify where the study is conducted.</p>
+    </div>
+  </footer>
+
+
+  <!-- =====================================================================
+       SITE SETTINGS  -  EDIT THIS BLOCK
+       ===================================================================== -->
+  <script>
+    window.SITE = {
+      // Researcher and institution (edit once here; shown in several places)
+      institution:    "Cebu Normal University",
+      college:        "College of Teacher Education",
+      adviser:        "[Name]",
+      researchEmail:  "[Email]",                 // e.g. "name@cnu.edu.ph"
+      adviserContact: "[Adviser contact, if available]",
+      officeContact:  "[Research or ethics office contact, optional]",
+      ethics:         "[Ethics clearance details to be added]",
+
+      // Interview phase (currently open)
+      interviewOpen:    true,
+      interviewFormUrl: "",                      // e.g. "https://form.jotform.com/XXXXXXXXXXXXXXX"
+
+      // Survey phase (not yet open). When it begins: surveyOpen: true + add the link.
+      surveyOpen:    false,
+      surveyFormUrl: "",                         // e.g. "https://form.jotform.com/YYYYYYYYYYYYYYY"
+
+      // Address the QR code points to. Leave empty to use the live site's own address.
+      // (Set it only if you want the QR to point somewhere else, such as a custom domain.)
+      siteUrl: "",
+
+      // Starting height of embedded forms in pixels (Jotform usually resizes automatically)
+      formHeight: 1000
+    };
+  </script>
+
+  <!-- QR code generator: qrcode-generator by Kazuhiko Arase, MIT license
+       (c) 2009 Kazuhiko Arase. "QR Code" is a registered trademark of DENSO WAVE INCORPORATED.
+       Do not edit. -->
+  <script>
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(n*r,o*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+  </script>
+
+  <!-- =====================================================================
+       Site behaviour (no need to edit)
+       ===================================================================== -->
+  <script>
+    (function () {
+      var S = window.SITE || {};
+      var root = document.documentElement;
+      root.classList.add('js');
+
+      function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+      function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
+      function isPlaceholder(v) { v = (v || '').trim(); return !v || /^\[.*\]$/.test(v); }
+      function isEmail(v) { return /^[^\s@\[\]]+@[^\s@]+\.[^\s@]+$/.test(v || ''); }
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ----- Mobile menu ----- */
+      var toggle = $('.menu-toggle');
+      var nav = $('#site-nav');
+      function closeMenu() { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+      $$('a', nav).forEach(function (a) { a.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('is-open')) { closeMenu(); toggle.focus(); }
+      });
+
+      /* ----- Researcher details ----- */
+      $$('[data-site]').forEach(function (el) {
+        var v = S[el.dataset.site];
+        if (v == null) return;
+        el.textContent = v;
+        el.classList.toggle('ph', isPlaceholder(v) && /^\[/.test((v || '').trim()));
+      });
+      $$('[data-email]').forEach(function (el) {
+        var v = S[el.dataset.email];
+        if (v == null) return;
+        el.textContent = v;
+        if (isEmail(v)) { el.href = 'mailto:' + v; el.classList.remove('ph'); }
+        else { el.removeAttribute('href'); el.classList.add('ph'); }
+      });
+
+      /* ----- Embeds ----- */
+      function mountEmbed(box, url, title) {
+        if (!box || !url) return;
+        var ph = $('.embed-placeholder', box);
+        if (ph) ph.remove();
+        var f = document.createElement('iframe');
+        f.src = url;
+        f.title = title;
+        f.loading = 'lazy';
+        f.setAttribute('allow', 'geolocation; microphone; camera');
+        f.style.height = (S.formHeight || 1000) + 'px';
+        box.appendChild(f);
+      }
+      // Jotform reports its height; resize the matching iframe so the form does not scroll inside itself.
+      window.addEventListener('message', function (e) {
+        if (typeof e.data !== 'string' || e.data.indexOf('setHeight:') !== 0) return;
+        var h = parseInt(e.data.split(':')[1], 10);
+        if (!h) return;
+        $$('.embed iframe').forEach(function (f) { if (f.contentWindow === e.source) f.style.height = h + 'px'; });
+      });
+
+      /* ----- Recruitment state ----- */
+      function setTag(name, text, open) {
+        $$('[data-status="' + name + '"]').forEach(function (el) {
+          el.textContent = text;
+          el.classList.toggle('is-open', open);
+        });
+        $$('[data-pathway="' + name + '"]').forEach(function (el) { el.classList.toggle('is-open', open); });
+      }
+      function swapCta(name, build) {
+        $$('[data-cta="' + name + '"]').forEach(function (old) { old.parentNode.replaceChild(build(), old); });
+      }
+      function makeLink(name, text, href) {
+        return function () {
+          var a = document.createElement('a');
+          a.className = 'btn'; a.href = href; a.setAttribute('data-cta', name); a.setAttribute('data-goto', href.slice(1));
+          a.innerHTML = text + ' <span class="arrow" aria-hidden="true">&rarr;</span>';
+          return a;
+        };
+      }
+      function makeDisabled(name, text) {
+        return function () {
+          var b = document.createElement('button');
+          b.type = 'button'; b.disabled = true; b.className = 'btn'; b.setAttribute('data-cta', name); b.textContent = text;
+          return b;
+        };
+      }
+
+      if (S.interviewOpen === false) {
+        setTag('interview', 'CLOSED', false);
+        swapCta('interview', makeDisabled('interview', 'Interviews Closed'));
+        $('#embed-interview').hidden = true;
+        $('#interview-closed').hidden = false;
+      } else {
+        mountEmbed($('#embed-interview'), S.interviewFormUrl, 'Interview screening form');
+      }
+
+      if (S.surveyOpen === true) {
+        setTag('survey', 'NOW OPEN', true);
+        swapCta('survey', makeLink('survey', 'Take the Survey', '#survey-form'));
+        var note = $('[data-survey-note]');
+        if (note) note.textContent = 'Now accepting responses.';
+        $('#survey-form').hidden = false;
+        mountEmbed($('#embed-survey'), S.surveyFormUrl, 'Survey');
+      }
+
+      /* ----- Jump to a form: scroll, then move focus to its heading ----- */
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('[data-goto]');
+        if (!a) return;
+        var target = document.getElementById(a.getAttribute('data-goto'));
+        var heading = target && target.querySelector('h2');
+        if (heading) { setTimeout(function () { heading.focus({ preventScroll: true }); }, reduce ? 0 : 500); }
+      });
+
+      /* ----- Reveal on scroll ----- */
+      var hero = $('.hero');
+      var items = $$('.reveal, .rise');
+      if (!('IntersectionObserver' in window) || reduce) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        hero.classList.add('is-ready');
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.12 });
+        items.forEach(function (el) { io.observe(el); });
+        requestAnimationFrame(function () { hero.classList.add('is-ready'); });
+      }
+
+      /* ----- Gentle parallax on the map layer ----- */
+      var map = $('.hero-map');
+      if (map && !reduce) {
+        var ticking = false;
+        window.addEventListener('scroll', function () {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(function () {
+            var y = window.scrollY;
+            if (y < window.innerHeight * 1.5) map.style.transform = 'translate3d(0,' + Math.round(y * 0.1) + 'px,0)';
+            ticking = false;
+          });
+        }, { passive: true });
+      }
+
+      /* ----- QR code (points to this site) ----- */
+      var qrBox = $('#qr-box'), qrUrl = $('#qr-url'), qrBtn = $('#qr-download');
+      var url = S.siteUrl || (/^https?:$/.test(location.protocol) ? location.origin + location.pathname : '');
+      if (url && typeof qrcode === 'function') {
+        try {
+          var q = qrcode(0, 'M');
+          q.addData(url);
+          q.make();
+          var n = q.getModuleCount(), m = 4, size = n + m * 2, d = '';
+          for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (q.isDark(r, c)) d += 'M' + (c + m) + ' ' + (r + m) + 'h1v1h-1z';
+          var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + size + ' ' + size + '" shape-rendering="crispEdges" role="img" aria-label="QR code that opens this research website">' +
+                    '<rect width="' + size + '" height="' + size + '" fill="#ffffff"/><path d="' + d + '" fill="#0e2468"/></svg>';
+          qrBox.innerHTML = svg;
+          qrUrl.textContent = url;
+          qrBtn.hidden = false;
+          qrBtn.addEventListener('click', function () {
+            var blob = new Blob([svg], { type: 'image/svg+xml' });
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'lesson-planning-study-qr.svg';
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            setTimeout(function () { URL.revokeObjectURL(link.href); }, 1000);
+          });
+        } catch (err) { /* leave the fallback message in place */ }
+      }
+    })();
+  </script>
+
+</body>
+</html>
