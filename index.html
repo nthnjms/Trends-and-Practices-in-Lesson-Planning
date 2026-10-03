@@ -551,6 +551,34 @@
         line-height: 1.1;
       }
     }
+
+        /* Mobile: even side margins, truly centered title, slimmer menu */
+    @media (max-width: 57.99rem) {
+      :root { --header-h: 5.1rem; }
+
+      .site-header .wrap {
+        padding-left: var(--pad);
+        padding-right: var(--pad);
+        padding-top: 0.5rem;
+        justify-content: center;
+      }
+      .site-name {
+        display: block;
+        width: 100%;
+        padding: 0 0 0.5rem 0.08em;   /* the left nudge cancels the letter-spacing */
+        text-align: center;
+        white-space: nowrap;
+        font-size: clamp(0.68rem, 3.4vw, 0.82rem);
+      }
+
+      .site-nav a,
+      .site-nav li:first-child a {
+        padding: 0.4rem 0.2rem;
+        font-size: 0.64rem;
+        letter-spacing: 0.05em;
+        line-height: 1.1;
+      }
+    }
   </style>
 </head>
 
