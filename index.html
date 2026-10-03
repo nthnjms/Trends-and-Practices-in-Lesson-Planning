@@ -1156,9 +1156,49 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         }, { passive: true });
       }
 
+      /* ----- Clean URLs: /contact instead of /#contact ----- */
+      var canPush = /^https?:$/.test(location.protocol) && !!history.pushState;
+
+      function goTo(id, push, instant) {
+        var target = document.getElementById(id);
+        if (!target) return false;
+        target.scrollIntoView({ behavior: (reduce || instant) ? 'instant' : 'smooth', block: 'start' });
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+        if (push && canPush) {
+          var path = id === 'home' ? '/' : '/' + id;
+          if (location.pathname !== path) history.pushState(null, '', path);
+        }
+        return true;
+      }
+
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="#"]');
+        if (!a) return;
+        var id = a.getAttribute('href').slice(1);
+        if (!id || !document.getElementById(id)) return;
+        e.preventDefault();
+        goTo(id, true, false);
+      });
+
+      window.addEventListener('popstate', function () {
+        var id = location.pathname.replace(/^\/+|\/+$/g, '') || 'home';
+        goTo(id, false, false);
+      });
+
+      // Opening app.com/contact (or an old app.com/#contact link) jumps straight to that section
+      window.addEventListener('load', function () {
+        var id = location.pathname.replace(/^\/+|\/+$/g, '') || location.hash.slice(1);
+        if (!id || !document.getElementById(id)) return;
+        setTimeout(function () {
+          goTo(id, false, true);
+          if (canPush && location.hash) history.replaceState(null, '', id === 'home' ? '/' : '/' + id);
+        }, 60);
+      });
+      
       /* ----- QR code (points to this site) ----- */
       var qrBox = $('#qr-box'), qrUrl = $('#qr-url'), qrBtn = $('#qr-download');
-      var url = S.siteUrl || (/^https?:$/.test(location.protocol) ? location.origin + location.pathname : '');
+      var url = S.siteUrl || (/^https?:$/.test(location.protocol) ? location.origin + '/' : '');
       if (url && typeof qrcode === 'function') {
         try {
           var q = qrcode(0, 'M');
