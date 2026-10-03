@@ -41,6 +41,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
 
+  [tabindex="-1"]:focus { outline: none; }
   <style>
     /* =====================================================================
        COLOURS: change these to match the recruitment poster
@@ -1180,6 +1181,20 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
           });
         } catch (err) { /* leave the fallback message in place */ }
       }
+
+            /* ----- Clean address bar: no # in the URL ----- */
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="#"]');
+        if (!a) return;
+        var id = a.getAttribute('href').slice(1);
+        var target = id ? document.getElementById(id) : null;
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+        if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+      });
     })();
   </script>
 
